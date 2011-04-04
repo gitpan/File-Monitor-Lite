@@ -1,6 +1,7 @@
 Changes
 Makefile.PL
 MANIFEST
-README
+README.mkd
 t/File-Monitor-Lite.t
 lib/File/Monitor/Lite.pm
+META.yml                                 Module meta-data (added by MakeMaker)

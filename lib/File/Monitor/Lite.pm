@@ -13,7 +13,7 @@ qw(
    watch_list
 ));
 	
-our $VERSION = '0.65';
+our $VERSION = '0.651';
 
 sub new {
     my $class = shift;
@@ -112,7 +112,7 @@ __END__
 
 =head1 NAME
 
-File::Monitor::Lite - Perl extension for blah blah blah
+File::Monitor::Lite - Monitor file changes
 
 =head1 SYNOPSIS
 
