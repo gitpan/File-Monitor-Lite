@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               File-Monitor-Lite
-version:            0.651
+version:            0.652
 abstract:           Monitor file changes
 author:
     - dryman <dryman@apple.com>
@@ -9,9 +9,12 @@ distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0
 build_requires:
-    File::Find::Rule:  0
-    File::Monitor:     0
-requires:  {}
+    ExtUtils::MakeMaker:  0
+requires:
+    Class::Accessor::Fast:  0
+    File::Find::Rule:     0
+    File::Monitor:        0
+    File::Spec:           0
 no_index:
     directory:
         - t

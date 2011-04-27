@@ -13,7 +13,7 @@ qw(
    watch_list
 ));
 	
-our $VERSION = '0.651';
+our $VERSION = '0.652';
 
 sub new {
     my $class = shift;
