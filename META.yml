@@ -1,25 +1,18 @@
 --- #YAML:1.0
-name:               File-Monitor-Lite
-version:            0.652
-abstract:           Monitor file changes
-author:
+name:                File-Monitor-Lite
+version:             0.652002
+abstract:            Monitor file changes
+license:             ~
+author:              
     - dryman <dryman@apple.com>
-license:            unknown
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
-build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Class::Accessor::Fast:  0
-    File::Find::Rule:     0
-    File::Monitor:        0
-    File::Spec:           0
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Class::Accessor::Fast:         0
+    File::Find::Rule:              0
+    File::Monitor:                 0
+    File::Spec::Functions:         0
+    File::Touch:                   0
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
