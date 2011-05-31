@@ -27,14 +27,14 @@ ok $m->check, 'check done';
 is_deeply [$m->created], [rel2abs('t2.test'), rel2abs('t3.test')], 't.test created';
 is_deeply [$m->deleted], [] , 'nothing deleted';
 is_deeply [$m->modified], [rel2abs('t1.test')] , 'nothing modified';
-is_deeply [sort $m->observed], [rel2abs('t1.test'), rel2abs('t2.test'), rel2abs('t3.test')], 'observing t.test';
+is_deeply [$m->observed], [rel2abs('t1.test'), rel2abs('t2.test'), rel2abs('t3.test')], 'observing t.test';
 
 
 note 'delete t2.test t3.test';
 unlink 't2.test','t3.test';
 ok $m->check, 'check done';
 is_deeply [$m->created], [], 'nothing created';
-is_deeply [sort $m->deleted], [rel2abs('t2.test'),rel2abs('t3.test')] , 't.test deleted';
+is_deeply [$m->deleted], [rel2abs('t2.test'),rel2abs('t3.test')] , 't.test deleted';
 is_deeply [$m->modified], [] , 'nothing modified';
 is_deeply [$m->observed], [rel2abs('t1.test')], 'observing nothing';
 

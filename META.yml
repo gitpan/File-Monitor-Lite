@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                File-Monitor-Lite
-version:             0.652002
+version:             0.652003
 abstract:            Monitor file changes
 license:             ~
 author:              

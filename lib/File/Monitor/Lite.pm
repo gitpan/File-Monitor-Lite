@@ -1,7 +1,7 @@
 package File::Monitor::Lite;
 
 use 5.8.6;
-our $VERSION = '0.652002';
+our $VERSION = '0.652003';
 use strict;
 use warnings;
 use File::Spec::Functions ':ALL';
@@ -93,19 +93,19 @@ sub check {
 sub created {
     my $self = shift;
     #return () unless @{$self->{created}};
-    return @{$self->{created}};
+    return sort @{$self->{created}};
 }
 sub modified {
     my $self = shift;
-    return @{$self->{modified}};
+    return sort @{$self->{modified}};
 }
 sub observed {
     my $self = shift;
-    return @{$self->{observed}};
+    return sort @{$self->{observed}};
 }
 sub deleted {
     my $self = shift;
-    return @{$self->{deleted}};
+    return sort @{$self->{deleted}};
 }
 sub anychange{
     my $self = shift;
